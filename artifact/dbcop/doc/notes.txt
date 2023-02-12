@@ -1,0 +1,33 @@
+main
+  load arguments
+  do parse
+  do
+
+parse
+  pre-prepare
+    connect database
+    turn on slow_query_log
+  prepare
+    do pre-prepare
+    create new table
+    insert variables
+  benchmark
+    create k threads
+    for each thread
+      for a sufficiently long iteration
+        do multiple transactions
+          choose some variables - randomly - and read or write it, also record
+    parse slow_query_log
+  final
+    delete slow_query_log
+    delete table
+
+
+
+
+--------
+VoltDB
+MongoDB
+
+
+communication graph, in TPC

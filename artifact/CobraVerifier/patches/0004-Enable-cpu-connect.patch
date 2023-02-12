@@ -1,0 +1,29 @@
+From 3c42f6d5edc537c1ef60f1277bbf123b5c6478e6 Mon Sep 17 00:00:00 2001
+From: nobody <nobody@example.com>
+Date: Mon, 29 Aug 2022 19:45:32 +0800
+Subject: [PATCH 4/5] Enable cpu connect
+
+---
+ src/main/java/gpu/ReachabilityMatrix.java | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/src/main/java/gpu/ReachabilityMatrix.java b/src/main/java/gpu/ReachabilityMatrix.java
+index 7cef9fb..fb4b785 100644
+--- a/src/main/java/gpu/ReachabilityMatrix.java
++++ b/src/main/java/gpu/ReachabilityMatrix.java
+@@ -84,7 +84,11 @@ public class ReachabilityMatrix {
+ 	// ======= connect ======
+ 	
+ 	public void connect(Long[] src_ids, Long[] dst_ids) {
+-		connect_simple(src_ids, dst_ids);
++		if (VeriConstants.GPU_MATRIX) {
++			connect_simple(src_ids, dst_ids);
++		} else {
++			connect_complicate(src_ids, dst_ids);
++		}
+ 	}
+ 	
+ 	// update the matrix by adding edge: src_id->dst_id
+-- 
+2.37.2
+

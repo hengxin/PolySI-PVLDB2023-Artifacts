@@ -1,0 +1,6 @@
+[submodule "CobraLogs"]
+	path = CobraLogs
+	url = https://github.com/DBCobra/CobraLogs.git
+[submodule "monosat"]
+	path = monosat
+	url = https://github.com/sambayless/monosat.git

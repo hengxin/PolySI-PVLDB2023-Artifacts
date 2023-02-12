@@ -1,0 +1,14 @@
+# AntidoteDB
+version:            "3.7"
+services:
+  antidote{i}:
+    image:          antidotedb/antidote
+    container_name: antidote{i}
+    hostname:       antidote{i}
+    environment:
+      SHORT_NAME:   "true"
+      NODE_NAME:    antidote@antidote{i}
+    volumes:
+      - ./script:/script
+    cap_add:
+      - NET_ADMIN

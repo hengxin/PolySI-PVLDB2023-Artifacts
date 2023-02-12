@@ -1,0 +1,18 @@
+version:            "3.7"
+services:
+  galera0:
+    build:          .
+    container_name: galera0
+    hostname:       galera0
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - CLUSTER_NAME=galera_cluster
+      - WSREP_SST_METHOD=xtrabackup-v2
+  galera:
+    build:          .
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - CLUSTER_NAME=galera_cluster
+      - CLUSTER_JOIN=galera0
+      - WSREP_SST_METHOD=xtrabackup-v2
+      

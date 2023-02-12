@@ -1,0 +1,97 @@
+From 64f952599c3ad06d8c2be09b90f4da6a45f13f78 Mon Sep 17 00:00:00 2001
+From: nobody <nobody@example.com>
+Date: Mon, 29 Aug 2022 19:44:46 +0800
+Subject: [PATCH 3/5] Implement dense2sparseCPU to work around cuda issue
+
+---
+ include/gpu_GPUmm.cu | 60 +++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 57 insertions(+), 3 deletions(-)
+
+diff --git a/include/gpu_GPUmm.cu b/include/gpu_GPUmm.cu
+index c50221f..6e99326 100644
+--- a/include/gpu_GPUmm.cu
++++ b/include/gpu_GPUmm.cu
+@@ -17,6 +17,10 @@
+ #include <string>
+ #include <cstdlib>
+ #include <cmath>
++#include <vector>
++#include <utility>
++#include <algorithm>
++#include <chrono>
+ 
+ using namespace std;
+ 
+@@ -281,6 +285,55 @@ dense2sparse(cusparseHandle_t handle, cusparseMatDescr_t descr,
+   return nnz_total;
+ }
+ 
++int dense2sparseCPU(float *cpu_m, float *csr_val, int *csr_rowptr, int *csr_colind, int n) {
++  auto start = chrono::steady_clock::now();
++  vector<pair<int, int>> coos;
++
++  // cpu_m is column-major
++  for (int j = 0; j < n; j++) {
++    for (int i = 0; i < n; i++) {
++      if (cpu_m[j * n + i] != 0) {
++        coos.push_back(make_pair(i, j));
++      }
++    }
++  }
++
++  if (coos.size() > MAX_NNZ) {
++    cout << "[INFO] too many non-zeros(" << coos.size() << "), maximum " << MAX_NNZ << "\n";
++    cout << "[INFO] stop using sparse\n";
++    return coos.size();
++  }
++
++  sort(coos.begin(), coos.end());
++  float *cpu_csr_val = new float[coos.size()];
++  int *cpu_csr_rowptr = new int[n + 1];
++  int *cpu_csr_colind = new int[coos.size()];
++
++  cpu_csr_rowptr[n] = coos.size();
++  for (int i = 0; i < coos.size(); i++) {
++    cpu_csr_val[i] = cpu_m[coos[i].second * n + coos[i].first];
++    cpu_csr_colind[i] = coos[i].second;
++    if (i == 0 || coos[i - 1].first != coos[i].first) {
++      cpu_csr_rowptr[coos[i].first] = i;
++    }
++  }
++
++  CUDA_CALL(cudaMemcpy(csr_val, cpu_csr_val, coos.size() * sizeof(float), cudaMemcpyHostToDevice));
++  CUDA_CALL(cudaMemcpy(csr_rowptr, cpu_csr_rowptr, (n + 1) * sizeof(int), cudaMemcpyHostToDevice));
++  CUDA_CALL(cudaMemcpy(csr_colind, cpu_csr_colind, coos.size() * sizeof(int), cudaMemcpyHostToDevice));
++
++  delete[] cpu_csr_val;
++  delete[] cpu_csr_rowptr;
++  delete[] cpu_csr_colind;
++
++  CUDA_CALL(cudaDeviceSynchronize());
++
++  auto end = chrono::steady_clock::now();
++  chrono::duration<double> dur = end - start;
++  printf("dense2sparseCPU: %fs\n", dur.count());
++  return coos.size();
++}
++
+ int
+ sparseSparseMM(cusparseHandle_t handle, cusparseMatDescr_t descr,
+     float* &csr_val, int* &csr_rowptr, int* &csr_colind,
+@@ -592,9 +645,10 @@ power(float *cpu_m, int n, bool fresh) {
+   CUDA_CALL(cudaMemcpy(gpu_m, cpu_m, n*n*sizeof(float), cudaMemcpyHostToDevice));
+ 
+   // (2) check if to use sparse
+-  int nnz = fresh ? dense2sparse(handle_s, descr, gpu_nnz_row, gpu_m,
+-               gpu_csr_val, gpu_csr_rowptr, gpu_csr_colind, n) :
+-            MAX_NNZ;
++  // int nnz = fresh ? dense2sparse(handle_s, descr, gpu_nnz_row, gpu_m,
++               // gpu_csr_val, gpu_csr_rowptr, gpu_csr_colind, n) :
++            // MAX_NNZ;
++  int nnz = fresh ? dense2sparseCPU(cpu_m, gpu_csr_val, gpu_csr_rowptr, gpu_csr_colind, n) : MAX_NNZ;
+ 
+   // (3) matrix multiplication
+   timeval start, end;
+-- 
+2.37.2
+

@@ -1,0 +1,62 @@
+plugins {
+    id 'application'
+    id "io.freefair.lombok" version '6.3.0'
+}
+
+group = 'PolySI'
+version = '1.0.0-SNAPSHOT'
+description = 'PolySI'
+
+application {
+    mainClass = 'Launcher'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:31.0.1-jre'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'info.picocli:picocli:4.6.3'
+    implementation 'org.roaringbitmap:RoaringBitmap:0.9.35'
+    implementation files('build/monosat/monosat.jar')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+}
+
+test {
+    systemProperty "java.library.path", "$buildDir/monosat"
+    jvmArgs += [ "-Xmx4096m" ]
+    useJUnitPlatform()
+}
+
+tasks.register('buildMonoSAT') {
+    exec {
+        commandLine 'cmake', '-B', "$buildDir/monosat", '-S', "$projectDir/monosat", '-DJAVA=ON', '-DBUILD_STATIC=OFF'
+    }
+
+    exec {
+        commandLine 'cmake', '--build', "$buildDir/monosat", '-j8'
+    }
+}
+
+jar {
+    dependsOn 'buildMonoSAT'
+
+    manifest {
+        attributes 'Main-Class': 'Launcher'
+    }
+
+    duplicatesStrategy('exclude')
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    from {
+        "$buildDir/monosat/libmonosat.so"
+    }
+}

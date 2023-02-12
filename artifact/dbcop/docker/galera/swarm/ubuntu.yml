@@ -1,0 +1,13 @@
+version:        "3.7"
+services:
+  parent:
+    image:      erkules/galera
+    command:    ["--wsrep-node-name=dbcop-test", "--wsrep-cluster-address=gcomm://"]
+    hostname:   parent
+  child:
+    image:      erkules/galera
+    depends_on:
+      - parent
+    command:    ["--wsrep-node-name=dbcop-test", "--wsrep-cluster-address=gcomm://parent"]
+    deploy:
+      replicas: 4

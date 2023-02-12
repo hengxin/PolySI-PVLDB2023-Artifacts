@@ -1,0 +1,156 @@
+From f67b062d0b347fe9f65259dbe8ca618795cdd6aa Mon Sep 17 00:00:00 2001
+From: nobody <nobody@example.com>
+Date: Mon, 29 Aug 2022 19:44:04 +0800
+Subject: [PATCH 2/5] Fix compatibility with cuda11
+
+---
+ include/gpu_GPUmm.cu | 76 ++++++++++++++++++++++++++++----------------
+ 1 file changed, 48 insertions(+), 28 deletions(-)
+
+diff --git a/include/gpu_GPUmm.cu b/include/gpu_GPUmm.cu
+index de81d83..c50221f 100644
+--- a/include/gpu_GPUmm.cu
++++ b/include/gpu_GPUmm.cu
+@@ -31,8 +31,8 @@ using namespace std;
+ #define THREADS_PER_BLOCK 512
+ #define REGULATE_BATCH 1000
+ 
+-#define MAX_N 30000ul
+-//#define MAX_N 16384ul
++//#define MAX_N 30000ul
++#define MAX_N 20000ul
+ #define MAX_NNZ ((MAX_N) * 20)
+ 
+ // sparse matrix optimization
+@@ -136,16 +136,17 @@ int
+ countResultNNZ(cusparseHandle_t handle, cusparseMatDescr_t descr,
+         float *csr_val, int *csr_rowptr, int *csr_colind,
+         int* &csr_rowptr_c,
+-        int nnz_total, int n) {
++        int nnz_total, int n, csrgemm2Info_t info, void *buffer) {
+   int baseC, nnzC;
+   // nnzTotalDevHostPtr points to host memory
+   int *nnzTotalDevHostPtr = &nnzC;
+-  CUSPARSE_CALL(cusparseXcsrgemmNnz(handle,
+-        CUSPARSE_OPERATION_NON_TRANSPOSE, CUSPARSE_OPERATION_NON_TRANSPOSE,
++  CUSPARSE_CALL(cusparseXcsrgemm2Nnz(handle,
+         n, n, n,
+         descr, nnz_total, csr_rowptr, csr_colind,
+         descr, nnz_total, csr_rowptr, csr_colind,
+-        descr, csr_rowptr_c, nnzTotalDevHostPtr ));
++        descr, nnz_total, csr_rowptr, csr_colind,
++        descr, csr_rowptr_c, nnzTotalDevHostPtr,
++        info, buffer));
+   if (NULL != nnzTotalDevHostPtr){
+       nnzC = *nnzTotalDevHostPtr;
+   } else {
+@@ -189,21 +190,21 @@ sparse2dense(cusparseHandle_t handle, cusparseMatDescr_t descr,
+   cout << "  [GPU] sparse matrix => dense matrix \n";
+ }
+ 
+-void
+-sparseSmm(cusparseHandle_t handle, cusparseMatDescr_t descr,
+-        float *csr_val, int *csr_rowptr, int *csr_colind,
+-        float *gpu_src, float *gpu_dst,
+-        int nnz_total, int n) {
+-  CUSPARSE_CALL(cusparseScsrmm(
+-      handle, CUSPARSE_OPERATION_NON_TRANSPOSE,
+-      n, n, n, nnz_total,
+-      &alpha, descr,
+-      csr_val, csr_rowptr, csr_colind,
+-      gpu_src, n,
+-      &beta, gpu_dst, n));
+-  CUDA_CALL(cudaThreadSynchronize());
+-  cout << "  [GPU] sparse mm\n";
+-}
++// void
++// sparseSmm(cusparseHandle_t handle, cusparseMatDescr_t descr,
++        // float *csr_val, int *csr_rowptr, int *csr_colind,
++        // float *gpu_src, float *gpu_dst,
++        // int nnz_total, int n) {
++  // CUSPARSE_CALL(cusparseScsrmm(
++      // handle, CUSPARSE_OPERATION_NON_TRANSPOSE,
++      // n, n, n, nnz_total,
++      // &alpha, descr,
++      // csr_val, csr_rowptr, csr_colind,
++      // gpu_src, n,
++      // &beta, gpu_dst, n));
++  // CUDA_CALL(cudaThreadSynchronize());
++  // cout << "  [GPU] sparse mm\n";
++// }
+ 
+ void
+ denseSgemm(cublasHandle_t handle, float *gpu_src, float *gpu_dst, int n) {
+@@ -241,16 +242,20 @@ void
+ sparseSparseSmm(cusparseHandle_t handle, cusparseMatDescr_t descr,
+         float *csr_val, int *csr_rowptr, int *csr_colind,
+         float *csr_val_c, int *csr_rowptr_c, int *csr_colind_c,
+-        int nnz_total, int n) {
+-  CUSPARSE_CALL(cusparseScsrgemm(
+-      handle, CUSPARSE_OPERATION_NON_TRANSPOSE, CUSPARSE_OPERATION_NON_TRANSPOSE,
+-      n, n, n,
++        int nnz_total, int n, csrgemm2Info_t info, void *buffer) {
++  CUSPARSE_CALL(cusparseScsrgemm2(
++      handle,
++      n, n, n, &alpha,
+       descr, nnz_total,
+       csr_val, csr_rowptr, csr_colind,
+       descr, nnz_total,
+       csr_val, csr_rowptr, csr_colind,
++      NULL,
++      descr, nnz_total,
++      csr_val, csr_rowptr, csr_colind,
+       descr,
+-      csr_val_c, csr_rowptr_c, csr_colind_c));
++      csr_val_c, csr_rowptr_c, csr_colind_c,
++      info, buffer));
+   CUDA_CALL(cudaThreadSynchronize());
+   cout << "  [GPU] sparse-sparse mm \n";
+ }
+@@ -280,13 +285,26 @@ int
+ sparseSparseMM(cusparseHandle_t handle, cusparseMatDescr_t descr,
+     float* &csr_val, int* &csr_rowptr, int* &csr_colind,
+     int nnz, int n) {
++  csrgemm2Info_t info = NULL;
++  void *buffer = NULL;
++  size_t bufferSize;
+   int *csr_rowptr_ret;
+   CUDA_CALL(cudaMalloc(&csr_rowptr_ret, sizeof(int)*(n+1)));
++  CUSPARSE_CALL(cusparseCreateCsrgemm2Info(&info));
++
++  CUSPARSE_CALL(cusparseScsrgemm2_bufferSizeExt(handle, n, n, n, &alpha,
++    descr, nnz, csr_rowptr, csr_colind,
++    descr, nnz, csr_rowptr, csr_colind,
++    NULL,
++    descr, nnz, csr_rowptr, csr_colind,
++    info,
++    &bufferSize));
++  CUDA_CALL(cudaMalloc(&buffer, bufferSize));
+ 
+   // (1) count result nnz
+   int nnz_ret = countResultNNZ(handle, descr,
+       csr_val, csr_rowptr, csr_colind,
+-      csr_rowptr_ret, nnz, n);
++      csr_rowptr_ret, nnz, n, info, buffer);
+ 
+   // (2) alloc result memory
+   float *csr_val_ret;
+@@ -298,12 +316,14 @@ sparseSparseMM(cusparseHandle_t handle, cusparseMatDescr_t descr,
+   sparseSparseSmm(handle, descr,
+     csr_val, csr_rowptr, csr_colind,
+     csr_val_ret, csr_rowptr_ret, csr_colind_ret,
+-    nnz, n);
++    nnz, n, info, buffer);
+ 
+   // (4) free previous resource and swap the poniter
+   CUDA_CALL(cudaFree(csr_rowptr));
+   CUDA_CALL(cudaFree(csr_val));
+   CUDA_CALL(cudaFree(csr_colind));
++  CUDA_CALL(cudaFree(buffer));
++  CUSPARSE_CALL(cusparseDestroyCsrgemm2Info(info));
+   csr_rowptr = csr_rowptr_ret;
+   csr_val = csr_val_ret;
+   csr_colind = csr_colind_ret;
+-- 
+2.37.2
+

@@ -1,0 +1,61 @@
+From fc36e683e3724020230e4f25f704d0041eed57fa Mon Sep 17 00:00:00 2001
+From: nobody <nobody@example.com>
+Date: Mon, 29 Aug 2022 19:38:32 +0800
+Subject: [PATCH 1/5] Fix compatibility with java11
+
+---
+ jni.sh  |  4 ++--
+ pom.xml | 10 ++++++++++
+ 2 files changed, 12 insertions(+), 2 deletions(-)
+
+diff --git a/jni.sh b/jni.sh
+index 11d1527..22f8aa1 100755
+--- a/jni.sh
++++ b/jni.sh
+@@ -36,7 +36,7 @@ function fail {
+   exit 1
+ }
+ 
+-if [ "$JAVA_V" == "1.8" ]; then
++if [ true ]; then
+   javac -h $DIR/include/ $DIR/src/main/java/gpu/GPUmm.java || fail "ERROR javac"
+ elif [ "$JAVA_V" == "1.7" ]; then
+   javac $DIR/src/main/java/gpu/GPUmm.java || fail "ERROR javac"
+@@ -52,7 +52,7 @@ if [ "$SYS" == "Mac" ]; then
+ elif [ "$SYS" == "Linux" ]; then
+   #g++ -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux/" \
+   #  -shared -o $DIR/include/libgpumm.so $DIR/include/verifier_gpu_GPUmm.cpp || fail "ERROR g++"
+-  nvcc \
++  $CUDA_PATH/bin/nvcc \
+     -Xcompiler -fPIC\
+     -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux/" \
+     -shared -o $DIR/include/libgpumm.so $DIR/include/gpu_GPUmm.cu \
+diff --git a/pom.xml b/pom.xml
+index a30c5ce..59abdae 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -41,6 +41,12 @@
+ 		<artifactId>monosat</artifactId>
+ 		<version>1.4.0</version>
+ 	</dependency>
++<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
++<dependency>
++    <groupId>javax.annotation</groupId>
++    <artifactId>javax.annotation-api</artifactId>
++    <version>1.3.2</version>
++</dependency>
+ 
+ 	<!--
+ 	<dependency>
+@@ -86,4 +92,8 @@
+       </plugin>
+     </plugins>
+   </build>
++    <properties>
++    <maven.compiler.source>1.8</maven.compiler.source>
++    <maven.compiler.target>1.8</maven.compiler.target>
++  </properties>
+ </project>
+-- 
+2.37.2
+

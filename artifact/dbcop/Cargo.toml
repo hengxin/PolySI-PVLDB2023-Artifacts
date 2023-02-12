@@ -1,0 +1,32 @@
+[package]
+name = "dbcop"
+version = "0.1.0"
+authors = ["Ranadeep Biswas <ranadip.bswas@gmail.com>"]
+
+[dependencies]
+rand = "*"
+clap = "*"
+ansi_term = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+serde_yaml = "*"
+byteorder = "*"
+petgraph = "*"
+rayon = "*"
+slog = "*"
+slog-term = "*"
+slog-json = "*"
+chrono = { version = "*", features = ["serde"] }
+bincode = "*"
+hashbrown = "*"
+
+[dev-dependencies]
+nom = "*"
+mysql = "*"
+postgres = "*"
+mongodb = "*"
+antidotedb = { git = "https://github.com/rnbguy/antidotedb_rs" }
+
+[profile.release]
+opt-level = 3

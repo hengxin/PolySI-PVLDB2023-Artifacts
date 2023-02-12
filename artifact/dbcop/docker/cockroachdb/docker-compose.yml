@@ -1,0 +1,15 @@
+version:            "3.7"
+services:
+  roach_m:
+    image:          cockroachdb/cockroach
+    container_name: roach_m
+    hostname:       roach_m
+    command:
+      - start
+      - --insecure
+  roach_s:
+    image:          cockroachdb/cockroach
+    command:
+      - start
+      - --insecure
+      - --join=roach_m

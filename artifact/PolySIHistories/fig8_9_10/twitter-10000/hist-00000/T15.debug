@@ -1,0 +1,1319 @@
+[DEBUG] Txn[100000121] start
+[DEBUG] Txn[100000121] try to commit
+[DEBUG] Txn[100000121] successfully commit
+[DEBUG] Txn[100000137] start
+[DEBUG] Txn[100000137] try to commit
+[DEBUG] Txn[100000137] successfully commit
+[DEBUG] Txn[10000014e] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[10000015d] abort
+[DEBUG] Txn[10000015e] start
+[DEBUG] Txn[10000015e] try to commit
+[DEBUG] Txn[10000015e] successfully commit
+[DEBUG] Txn[100000161] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100000203] abort
+[DEBUG] Txn[100000204] start
+[DEBUG] Txn[100000204] try to commit
+[DEBUG] Txn[100000204] successfully commit
+[DEBUG] Txn[10000020a] start
+[DEBUG] Txn[10000020a] try to commit
+[DEBUG] Txn[10000020a] successfully commit
+[DEBUG] Txn[100000221] start
+[DEBUG] Txn[100000221] try to commit
+[DEBUG] Txn[100000221] successfully commit
+[DEBUG] Txn[10000024c] start
+[DEBUG] Txn[10000024c] try to commit
+[DEBUG] Txn[10000024c] successfully commit
+[DEBUG] Txn[10000024d] start
+[DEBUG] Txn[10000024d] try to commit
+[DEBUG] Txn[10000024d] successfully commit
+[DEBUG] Txn[10000024e] start
+[DEBUG] Txn[10000024e] try to commit
+[DEBUG] Txn[10000024e] successfully commit
+[DEBUG] Txn[10000024f] start
+[DEBUG] Txn[10000024f] try to commit
+[DEBUG] Txn[10000024f] successfully commit
+[DEBUG] Txn[10000025c] start
+[DEBUG] Txn[10000025c] try to commit
+[DEBUG] Txn[10000025c] successfully commit
+[DEBUG] Txn[100000269] start
+[DEBUG] Txn[100000269] try to commit
+[DEBUG] Txn[100000269] successfully commit
+[DEBUG] Txn[10000028a] start
+[DEBUG] Txn[10000028a] try to commit
+[DEBUG] Txn[10000028a] successfully commit
+[DEBUG] Txn[10000029e] start
+[DEBUG] Txn[10000029e] try to commit
+[DEBUG] Txn[10000029e] successfully commit
+[DEBUG] Txn[1000002ba] start
+[DEBUG] Txn[1000002ba] try to commit
+[DEBUG] Txn[1000002ba] successfully commit
+[DEBUG] Txn[1000002d0] start
+[DEBUG] Txn[1000002d0] try to commit
+[DEBUG] Txn[1000002d0] successfully commit
+[DEBUG] Txn[1000002e7] start
+[DEBUG] Txn[1000002e7] try to commit
+[DEBUG] Txn[1000002e7] successfully commit
+[DEBUG] Txn[100000307] start
+[DEBUG] Txn[100000307] try to commit
+[DEBUG] Txn[100000307] successfully commit
+[DEBUG] Txn[100000318] start
+[DEBUG] Txn[100000318] try to commit
+[DEBUG] Txn[100000318] successfully commit
+[DEBUG] Txn[100000330] start
+[DEBUG] Txn[100000330] try to commit
+[DEBUG] Txn[100000330] successfully commit
+[DEBUG] Txn[100000342] start
+[DEBUG] Txn[100000342] try to commit
+[DEBUG] Txn[100000342] successfully commit
+[DEBUG] Txn[100000366] start
+[DEBUG] Txn[100000366] try to commit
+[DEBUG] Txn[100000366] successfully commit
+[DEBUG] Txn[100000381] start
+[DEBUG] Txn[100000381] try to commit
+[DEBUG] Txn[100000381] successfully commit
+[DEBUG] Txn[1000003ab] start
+[DEBUG] Txn[1000003ab] try to commit
+[DEBUG] Txn[1000003ab] successfully commit
+[DEBUG] Txn[1000003bd] start
+[DEBUG] Txn[1000003bd] try to commit
+[DEBUG] Txn[1000003bd] successfully commit
+[DEBUG] Txn[1000003e1] start
+[DEBUG] Txn[1000003e1] try to commit
+[DEBUG] Txn[1000003e1] successfully commit
+[DEBUG] Txn[1000003fe] start
+[DEBUG] Txn[1000003fe] try to commit
+[DEBUG] Txn[1000003fe] successfully commit
+[DEBUG] Txn[100000412] start
+[DEBUG] Txn[100000412] try to commit
+[DEBUG] Txn[100000412] successfully commit
+[DEBUG] Txn[100000430] start
+[DEBUG] Txn[100000430] try to commit
+[DEBUG] Txn[100000430] successfully commit
+[DEBUG] Txn[100000443] start
+[DEBUG] Txn[100000443] try to commit
+[DEBUG] Txn[100000443] successfully commit
+[DEBUG] Txn[10000045b] start
+[DEBUG] Txn[10000045b] try to commit
+[DEBUG] Txn[10000045b] successfully commit
+[DEBUG] Txn[100000470] start
+[DEBUG] Txn[100000470] try to commit
+[DEBUG] Txn[100000470] successfully commit
+[DEBUG] Txn[10000047f] start
+[DEBUG] Txn[10000047f] try to commit
+[DEBUG] Txn[10000047f] successfully commit
+[DEBUG] Txn[10000048d] start
+[DEBUG] Txn[10000048d] try to commit
+[DEBUG] Txn[10000048d] successfully commit
+[DEBUG] Txn[1000004ae] start
+[DEBUG] Txn[1000004ae] try to commit
+[DEBUG] Txn[1000004ae] successfully commit
+[DEBUG] Txn[1000004cb] start
+[DEBUG] Txn[1000004cb] try to commit
+[DEBUG] Txn[1000004cb] successfully commit
+[DEBUG] Txn[1000004df] start
+[DEBUG] Txn[1000004df] try to commit
+[DEBUG] Txn[1000004df] successfully commit
+[DEBUG] Txn[1000004f9] start
+[DEBUG] Txn[1000004f9] try to commit
+[DEBUG] Txn[1000004f9] successfully commit
+[DEBUG] Txn[10000050e] start
+[DEBUG] Txn[10000050e] try to commit
+[DEBUG] Txn[10000050e] successfully commit
+[DEBUG] Txn[100000519] start
+[DEBUG] Txn[100000519] try to commit
+[DEBUG] Txn[100000519] successfully commit
+[DEBUG] Txn[10000052e] start
+[DEBUG] Txn[10000052e] try to commit
+[DEBUG] Txn[10000052e] successfully commit
+[DEBUG] Txn[10000053e] start
+[DEBUG] Txn[10000053e] try to commit
+[DEBUG] Txn[10000053e] successfully commit
+[DEBUG] Txn[100000560] start
+[DEBUG] Txn[100000560] try to commit
+[DEBUG] Txn[100000560] successfully commit
+[DEBUG] Txn[100000568] start
+[DEBUG] Txn[100000568] try to commit
+[DEBUG] Txn[100000568] successfully commit
+[DEBUG] Txn[100000582] start
+[DEBUG] Txn[100000582] try to commit
+[DEBUG] Txn[100000582] successfully commit
+[DEBUG] Txn[100000595] start
+[DEBUG] Txn[100000595] try to commit
+[DEBUG] Txn[100000595] successfully commit
+[DEBUG] Txn[1000005bc] start
+[DEBUG] Txn[1000005bc] try to commit
+[DEBUG] Txn[1000005bc] successfully commit
+[DEBUG] Txn[1000005c8] start
+[DEBUG] Txn[1000005c8] try to commit
+[DEBUG] Txn[1000005c8] successfully commit
+[DEBUG] Txn[1000005e0] start
+[DEBUG] Txn[1000005e0] try to commit
+[DEBUG] Txn[1000005e0] successfully commit
+[DEBUG] Txn[1000005f9] start
+[DEBUG] Txn[1000005f9] try to commit
+[DEBUG] Txn[1000005f9] successfully commit
+[DEBUG] Txn[100000608] start
+[DEBUG] Txn[100000608] try to commit
+[DEBUG] Txn[100000608] successfully commit
+[DEBUG] Txn[100000614] start
+[DEBUG] Txn[100000614] try to commit
+[DEBUG] Txn[100000614] successfully commit
+[DEBUG] Txn[100000628] start
+[DEBUG] Txn[100000628] try to commit
+[DEBUG] Txn[100000628] successfully commit
+[DEBUG] Txn[10000063b] start
+[DEBUG] Txn[10000063b] try to commit
+[DEBUG] Txn[10000063b] successfully commit
+[DEBUG] Txn[10000065f] start
+[DEBUG] Txn[10000065f] try to commit
+[DEBUG] Txn[10000065f] successfully commit
+[DEBUG] Txn[10000067a] start
+[DEBUG] Txn[10000067a] try to commit
+[DEBUG] Txn[10000067a] successfully commit
+[DEBUG] Txn[10000068f] start
+[DEBUG] Txn[10000068f] try to commit
+[DEBUG] Txn[10000068f] successfully commit
+[DEBUG] Txn[1000006a6] start
+[DEBUG] Txn[1000006a6] try to commit
+[DEBUG] Txn[1000006a6] successfully commit
+[DEBUG] Txn[1000006c7] start
+[DEBUG] Txn[1000006c7] try to commit
+[DEBUG] Txn[1000006c7] successfully commit
+[DEBUG] Txn[1000006df] start
+[DEBUG] Txn[1000006df] try to commit
+[DEBUG] Txn[1000006df] successfully commit
+[DEBUG] Txn[100000701] start
+[DEBUG] Txn[100000701] try to commit
+[DEBUG] Txn[100000701] successfully commit
+[DEBUG] Txn[100000738] start
+[DEBUG] Txn[100000738] try to commit
+[DEBUG] Txn[100000738] successfully commit
+[DEBUG] Txn[100000747] start
+[DEBUG] Txn[100000747] try to commit
+[DEBUG] Txn[100000747] successfully commit
+[DEBUG] Txn[100000772] start
+[DEBUG] Txn[100000772] try to commit
+[DEBUG] Txn[100000772] successfully commit
+[DEBUG] Txn[10000077b] start
+[DEBUG] Txn[10000077b] try to commit
+[DEBUG] Txn[10000077b] successfully commit
+[DEBUG] Txn[10000078f] start
+[DEBUG] Txn[10000078f] try to commit
+[DEBUG] Txn[10000078f] successfully commit
+[DEBUG] Txn[1000007b0] start
+[DEBUG] Txn[1000007b0] try to commit
+[DEBUG] Txn[1000007b0] successfully commit
+[DEBUG] Txn[1000007e2] start
+[DEBUG] Txn[1000007e2] try to commit
+[DEBUG] Txn[1000007e2] successfully commit
+[DEBUG] Txn[1000007fb] start
+[DEBUG] Txn[1000007fb] try to commit
+[DEBUG] Txn[1000007fb] successfully commit
+[DEBUG] Txn[10000080d] start
+[DEBUG] Txn[10000080d] try to commit
+[DEBUG] Txn[10000080d] successfully commit
+[DEBUG] Txn[10000082a] start
+[DEBUG] Txn[10000082a] try to commit
+[DEBUG] Txn[10000082a] successfully commit
+[DEBUG] Txn[100000843] start
+[DEBUG] Txn[100000843] try to commit
+[DEBUG] Txn[100000843] successfully commit
+[DEBUG] Txn[100000854] start
+[DEBUG] Txn[100000854] try to commit
+[DEBUG] Txn[100000854] successfully commit
+[DEBUG] Txn[100000889] start
+[DEBUG] Txn[100000889] try to commit
+[DEBUG] Txn[100000889] successfully commit
+[DEBUG] Txn[1000008a0] start
+[DEBUG] Txn[1000008a0] try to commit
+[DEBUG] Txn[1000008a0] successfully commit
+[DEBUG] Txn[1000008b5] start
+[DEBUG] Txn[1000008b5] try to commit
+[DEBUG] Txn[1000008b5] successfully commit
+[DEBUG] Txn[1000008cd] start
+[DEBUG] Txn[1000008cd] try to commit
+[DEBUG] Txn[1000008cd] successfully commit
+[DEBUG] Txn[1000008dc] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[1000008ec] abort
+[DEBUG] Txn[1000008ed] start
+[DEBUG] Txn[1000008ed] try to commit
+[DEBUG] Txn[1000008ed] successfully commit
+[DEBUG] Txn[1000008ff] start
+[DEBUG] Txn[1000008ff] try to commit
+[DEBUG] Txn[1000008ff] successfully commit
+[DEBUG] Txn[10000090e] start
+[DEBUG] Txn[10000090e] try to commit
+[DEBUG] Txn[10000090e] successfully commit
+[DEBUG] Txn[10000091b] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[10000094f] abort
+[DEBUG] Txn[100000950] start
+[DEBUG] Txn[100000950] try to commit
+[DEBUG] Txn[100000950] successfully commit
+[DEBUG] Txn[100000963] start
+[DEBUG] Txn[100000963] try to commit
+[DEBUG] Txn[100000963] successfully commit
+[DEBUG] Txn[100000970] start
+[DEBUG] Txn[100000970] try to commit
+[DEBUG] Txn[100000970] successfully commit
+[DEBUG] Txn[100000988] start
+[DEBUG] Txn[100000988] try to commit
+[DEBUG] Txn[100000988] successfully commit
+[DEBUG] Txn[100000998] start
+[DEBUG] Txn[100000998] try to commit
+[DEBUG] Txn[100000998] successfully commit
+[DEBUG] Txn[1000009c2] start
+[DEBUG] Txn[1000009c2] try to commit
+[DEBUG] Txn[1000009c2] successfully commit
+[DEBUG] Txn[1000009d4] start
+[DEBUG] Txn[1000009d4] try to commit
+[DEBUG] Txn[1000009d4] successfully commit
+[DEBUG] Txn[1000009ec] start
+[DEBUG] Txn[1000009ec] try to commit
+[DEBUG] Txn[1000009ec] successfully commit
+[DEBUG] Txn[100000a01] start
+[DEBUG] Txn[100000a01] try to commit
+[DEBUG] Txn[100000a01] successfully commit
+[DEBUG] Txn[100000a17] start
+[DEBUG] Txn[100000a17] try to commit
+[DEBUG] Txn[100000a17] successfully commit
+[DEBUG] Txn[100000a41] start
+[DEBUG] Txn[100000a41] try to commit
+[DEBUG] Txn[100000a41] successfully commit
+[DEBUG] Txn[100000a5f] start
+[DEBUG] Txn[100000a5f] try to commit
+[DEBUG] Txn[100000a5f] successfully commit
+[DEBUG] Txn[100000a7a] start
+[DEBUG] Txn[100000a7a] try to commit
+[DEBUG] Txn[100000a7a] successfully commit
+[DEBUG] Txn[100000a87] start
+[DEBUG] Txn[100000a87] try to commit
+[DEBUG] Txn[100000a87] successfully commit
+[DEBUG] Txn[100000aa0] start
+[DEBUG] Txn[100000aa0] try to commit
+[DEBUG] Txn[100000aa0] successfully commit
+[DEBUG] Txn[100000ab2] start
+[DEBUG] Txn[100000ab2] try to commit
+[DEBUG] Txn[100000ab2] successfully commit
+[DEBUG] Txn[100000ad1] start
+[DEBUG] Txn[100000ad1] try to commit
+[DEBUG] Txn[100000ad1] successfully commit
+[DEBUG] Txn[100000adf] start
+[DEBUG] Txn[100000adf] try to commit
+[DEBUG] Txn[100000adf] successfully commit
+[DEBUG] Txn[100000af7] start
+[DEBUG] Txn[100000af7] try to commit
+[DEBUG] Txn[100000af7] successfully commit
+[DEBUG] Txn[100000b16] start
+[DEBUG] Txn[100000b16] try to commit
+[DEBUG] Txn[100000b16] successfully commit
+[DEBUG] Txn[100000b29] start
+[DEBUG] Txn[100000b29] try to commit
+[DEBUG] Txn[100000b29] successfully commit
+[DEBUG] Txn[100000b3f] start
+[DEBUG] Txn[100000b3f] try to commit
+[DEBUG] Txn[100000b3f] successfully commit
+[DEBUG] Txn[100000b4f] start
+[DEBUG] Txn[100000b4f] try to commit
+[DEBUG] Txn[100000b4f] successfully commit
+[DEBUG] Txn[100000b5c] start
+[DEBUG] Txn[100000b5c] try to commit
+[DEBUG] Txn[100000b5c] successfully commit
+[DEBUG] Txn[100000b6c] start
+[DEBUG] Txn[100000b6c] try to commit
+[DEBUG] Txn[100000b6c] successfully commit
+[DEBUG] Txn[100000b88] start
+[DEBUG] Txn[100000b88] try to commit
+[DEBUG] Txn[100000b88] successfully commit
+[DEBUG] Txn[100000b9a] start
+[DEBUG] Txn[100000b9a] try to commit
+[DEBUG] Txn[100000b9a] successfully commit
+[DEBUG] Txn[100000bbf] start
+[DEBUG] Txn[100000bbf] try to commit
+[DEBUG] Txn[100000bbf] successfully commit
+[DEBUG] Txn[100000bcc] start
+[DEBUG] Txn[100000bcc] try to commit
+[DEBUG] Txn[100000bcc] successfully commit
+[DEBUG] Txn[100000bf5] start
+[DEBUG] Txn[100000bf5] try to commit
+[DEBUG] Txn[100000bf5] successfully commit
+[DEBUG] Txn[100000c04] start
+[DEBUG] Txn[100000c04] try to commit
+[DEBUG] Txn[100000c04] successfully commit
+[DEBUG] Txn[100000c16] start
+[DEBUG] Txn[100000c16] try to commit
+[DEBUG] Txn[100000c16] successfully commit
+[DEBUG] Txn[100000c28] start
+[DEBUG] Txn[100000c28] try to commit
+[DEBUG] Txn[100000c28] successfully commit
+[DEBUG] Txn[100000c3e] start
+[DEBUG] Txn[100000c3e] try to commit
+[DEBUG] Txn[100000c3e] successfully commit
+[DEBUG] Txn[100000c42] start
+[DEBUG] Txn[100000c42] try to commit
+[DEBUG] Txn[100000c42] successfully commit
+[DEBUG] Txn[100000c62] start
+[DEBUG] Txn[100000c62] try to commit
+[DEBUG] Txn[100000c62] successfully commit
+[DEBUG] Txn[100000c80] start
+[DEBUG] Txn[100000c80] try to commit
+[DEBUG] Txn[100000c80] successfully commit
+[DEBUG] Txn[100000c95] start
+[DEBUG] Txn[100000c95] try to commit
+[DEBUG] Txn[100000c95] successfully commit
+[DEBUG] Txn[100000cb0] start
+[DEBUG] Txn[100000cb0] try to commit
+[DEBUG] Txn[100000cb0] successfully commit
+[DEBUG] Txn[100000ccb] start
+[DEBUG] Txn[100000ccb] try to commit
+[DEBUG] Txn[100000ccb] successfully commit
+[DEBUG] Txn[100000ce0] start
+[DEBUG] Txn[100000ce0] try to commit
+[DEBUG] Txn[100000ce0] successfully commit
+[DEBUG] Txn[100000cf9] start
+[DEBUG] Txn[100000cf9] try to commit
+[DEBUG] Txn[100000cf9] successfully commit
+[DEBUG] Txn[100000d07] start
+[DEBUG] Txn[100000d07] try to commit
+[DEBUG] Txn[100000d07] successfully commit
+[DEBUG] Txn[100000d0c] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100000d63] abort
+[DEBUG] Txn[100000d64] start
+[DEBUG] Txn[100000d64] try to commit
+[DEBUG] Txn[100000d64] successfully commit
+[DEBUG] Txn[100000d7d] start
+[DEBUG] Txn[100000d7d] try to commit
+[DEBUG] Txn[100000d7d] successfully commit
+[DEBUG] Txn[100000d92] start
+[DEBUG] Txn[100000d92] try to commit
+[DEBUG] Txn[100000d92] successfully commit
+[DEBUG] Txn[100000da9] start
+[DEBUG] Txn[100000da9] try to commit
+[DEBUG] Txn[100000da9] successfully commit
+[DEBUG] Txn[100000dcc] start
+[DEBUG] Txn[100000dcc] try to commit
+[DEBUG] Txn[100000dcc] successfully commit
+[DEBUG] Txn[100000de8] start
+[DEBUG] Txn[100000de8] try to commit
+[DEBUG] Txn[100000de8] successfully commit
+[DEBUG] Txn[100000dfa] start
+[DEBUG] Txn[100000dfa] try to commit
+[DEBUG] Txn[100000dfa] successfully commit
+[DEBUG] Txn[100000e21] start
+[DEBUG] Txn[100000e21] try to commit
+[DEBUG] Txn[100000e21] successfully commit
+[DEBUG] Txn[100000e34] start
+[DEBUG] Txn[100000e34] try to commit
+[DEBUG] Txn[100000e34] successfully commit
+[DEBUG] Txn[100000e40] start
+[DEBUG] Txn[100000e40] try to commit
+[DEBUG] Txn[100000e40] successfully commit
+[DEBUG] Txn[100000e50] start
+[DEBUG] Txn[100000e50] try to commit
+[DEBUG] Txn[100000e50] successfully commit
+[DEBUG] Txn[100000e6b] start
+[DEBUG] Txn[100000e6b] try to commit
+[DEBUG] Txn[100000e6b] successfully commit
+[DEBUG] Txn[100000e83] start
+[DEBUG] Txn[100000e83] try to commit
+[DEBUG] Txn[100000e83] successfully commit
+[DEBUG] Txn[100000ea3] start
+[DEBUG] Txn[100000ea3] try to commit
+[DEBUG] Txn[100000ea3] successfully commit
+[DEBUG] Txn[100000eb2] start
+[DEBUG] Txn[100000eb2] try to commit
+[DEBUG] Txn[100000eb2] successfully commit
+[DEBUG] Txn[100000ed4] start
+[DEBUG] Txn[100000ed4] try to commit
+[DEBUG] Txn[100000ed4] successfully commit
+[DEBUG] Txn[100000ef2] start
+[DEBUG] Txn[100000ef2] try to commit
+[DEBUG] Txn[100000ef2] successfully commit
+[DEBUG] Txn[100000f0d] start
+[DEBUG] Txn[100000f0d] try to commit
+[DEBUG] Txn[100000f0d] successfully commit
+[DEBUG] Txn[100000f19] start
+[DEBUG] Txn[100000f19] try to commit
+[DEBUG] Txn[100000f19] successfully commit
+[DEBUG] Txn[100000f32] start
+[DEBUG] Txn[100000f32] try to commit
+[DEBUG] Txn[100000f32] successfully commit
+[DEBUG] Txn[100000f4a] start
+[DEBUG] Txn[100000f4a] try to commit
+[DEBUG] Txn[100000f4a] successfully commit
+[DEBUG] Txn[100000f65] start
+[DEBUG] Txn[100000f65] try to commit
+[DEBUG] Txn[100000f65] successfully commit
+[DEBUG] Txn[100000f7e] start
+[DEBUG] Txn[100000f7e] try to commit
+[DEBUG] Txn[100000f7e] successfully commit
+[DEBUG] Txn[100000f8b] start
+[DEBUG] Txn[100000f8b] try to commit
+[DEBUG] Txn[100000f8b] successfully commit
+[DEBUG] Txn[100000fae] start
+[DEBUG] Txn[100000fae] try to commit
+[DEBUG] Txn[100000fae] successfully commit
+[DEBUG] Txn[100000fcb] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100000ff5] abort
+[DEBUG] Txn[100000ff6] start
+[DEBUG] Txn[100000ff6] try to commit
+[DEBUG] Txn[100000ff6] successfully commit
+[DEBUG] Txn[100001002] start
+[DEBUG] Txn[100001002] try to commit
+[DEBUG] Txn[100001002] successfully commit
+[DEBUG] Txn[10000101d] start
+[DEBUG] Txn[10000101d] try to commit
+[DEBUG] Txn[10000101d] successfully commit
+[DEBUG] Txn[10000102e] start
+[DEBUG] Txn[10000102e] try to commit
+[DEBUG] Txn[10000102e] successfully commit
+[DEBUG] Txn[100001045] start
+[DEBUG] Txn[100001045] try to commit
+[DEBUG] Txn[100001045] successfully commit
+[DEBUG] Txn[100001056] start
+[DEBUG] Txn[100001056] try to commit
+[DEBUG] Txn[100001056] successfully commit
+[DEBUG] Txn[10000107a] start
+[DEBUG] Txn[10000107a] try to commit
+[DEBUG] Txn[10000107a] successfully commit
+[DEBUG] Txn[1000010a3] start
+[DEBUG] Txn[1000010a3] try to commit
+[DEBUG] Txn[1000010a3] successfully commit
+[DEBUG] Txn[1000010b0] start
+[DEBUG] Txn[1000010b0] try to commit
+[DEBUG] Txn[1000010b0] successfully commit
+[DEBUG] Txn[1000010cd] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[1000010d3] abort
+[DEBUG] Txn[1000010d4] start
+[DEBUG] Txn[1000010d4] try to commit
+[DEBUG] Txn[1000010d4] successfully commit
+[DEBUG] Txn[1000010ee] start
+[DEBUG] Txn[1000010ee] try to commit
+[DEBUG] Txn[1000010ee] successfully commit
+[DEBUG] Txn[100001113] start
+[DEBUG] Txn[100001113] try to commit
+[DEBUG] Txn[100001113] successfully commit
+[DEBUG] Txn[100001124] start
+[DEBUG] Txn[100001124] try to commit
+[DEBUG] Txn[100001124] successfully commit
+[DEBUG] Txn[100001139] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100001190] abort
+[DEBUG] Txn[100001191] start
+[DEBUG] Txn[100001191] try to commit
+[DEBUG] Txn[100001191] successfully commit
+[DEBUG] Txn[1000011b0] start
+[DEBUG] Txn[1000011b0] try to commit
+[DEBUG] Txn[1000011b0] successfully commit
+[DEBUG] Txn[1000011d8] start
+[DEBUG] Txn[1000011d8] try to commit
+[DEBUG] Txn[1000011d8] successfully commit
+[DEBUG] Txn[1000011e5] start
+[DEBUG] Txn[1000011e5] try to commit
+[DEBUG] Txn[1000011e5] successfully commit
+[DEBUG] Txn[1000011f8] start
+[DEBUG] Txn[1000011f8] try to commit
+[DEBUG] Txn[1000011f8] successfully commit
+[DEBUG] Txn[10000121c] start
+[DEBUG] Txn[10000121c] try to commit
+[DEBUG] Txn[10000121c] successfully commit
+[DEBUG] Txn[100001233] start
+[DEBUG] Txn[100001233] try to commit
+[DEBUG] Txn[100001233] successfully commit
+[DEBUG] Txn[100001249] start
+[DEBUG] Txn[100001249] try to commit
+[DEBUG] Txn[100001249] successfully commit
+[DEBUG] Txn[10000125c] start
+[DEBUG] Txn[10000125c] try to commit
+[DEBUG] Txn[10000125c] successfully commit
+[DEBUG] Txn[10000126f] start
+[DEBUG] Txn[10000126f] try to commit
+[DEBUG] Txn[10000126f] successfully commit
+[DEBUG] Txn[100001288] start
+[DEBUG] Txn[100001288] try to commit
+[DEBUG] Txn[100001288] successfully commit
+[DEBUG] Txn[100001298] start
+[DEBUG] Txn[100001298] try to commit
+[DEBUG] Txn[100001298] successfully commit
+[DEBUG] Txn[1000012aa] start
+[DEBUG] Txn[1000012aa] try to commit
+[DEBUG] Txn[1000012aa] successfully commit
+[DEBUG] Txn[1000012b9] start
+[DEBUG] Txn[1000012b9] try to commit
+[DEBUG] Txn[1000012b9] successfully commit
+[DEBUG] Txn[1000012c0] start
+[DEBUG] Txn[1000012c0] try to commit
+[DEBUG] Txn[1000012c0] successfully commit
+[DEBUG] Txn[1000012d0] start
+[DEBUG] Txn[1000012d0] try to commit
+[DEBUG] Txn[1000012d0] successfully commit
+[DEBUG] Txn[1000012e2] start
+[DEBUG] Txn[1000012e2] try to commit
+[DEBUG] Txn[1000012e2] successfully commit
+[DEBUG] Txn[1000012fd] start
+[DEBUG] Txn[1000012fd] try to commit
+[DEBUG] Txn[1000012fd] successfully commit
+[DEBUG] Txn[100001308] start
+[DEBUG] Txn[100001308] try to commit
+[DEBUG] Txn[100001308] successfully commit
+[DEBUG] Txn[100001310] start
+[DEBUG] Txn[100001310] try to commit
+[DEBUG] Txn[100001310] successfully commit
+[DEBUG] Txn[100001322] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100001336] abort
+[DEBUG] Txn[100001338] start
+[DEBUG] Txn[100001338] try to commit
+[DEBUG] Txn[100001338] successfully commit
+[DEBUG] Txn[1000013a5] start
+[DEBUG] Txn[1000013a5] try to commit
+[DEBUG] Txn[1000013a5] successfully commit
+[DEBUG] Txn[1000013b2] start
+[DEBUG] Txn[1000013b2] try to commit
+[DEBUG] Txn[1000013b2] successfully commit
+[DEBUG] Txn[1000013d1] start
+[DEBUG] Txn[1000013d1] try to commit
+[DEBUG] Txn[1000013d1] successfully commit
+[DEBUG] Txn[1000013f1] start
+[DEBUG] Txn[1000013f1] try to commit
+[DEBUG] Txn[1000013f1] successfully commit
+[DEBUG] Txn[100001418] start
+[DEBUG] Txn[100001418] try to commit
+[DEBUG] Txn[100001418] successfully commit
+[DEBUG] Txn[100001432] start
+[DEBUG] Txn[100001432] try to commit
+[DEBUG] Txn[100001432] successfully commit
+[DEBUG] Txn[10000144c] start
+[DEBUG] Txn[10000144c] try to commit
+[DEBUG] Txn[10000144c] successfully commit
+[DEBUG] Txn[100001456] start
+[DEBUG] Txn[100001456] try to commit
+[DEBUG] Txn[100001456] successfully commit
+[DEBUG] Txn[1000014a4] start
+[DEBUG] Txn[1000014a4] try to commit
+[DEBUG] Txn[1000014a4] successfully commit
+[DEBUG] Txn[1000014ae] start
+[DEBUG] Txn[1000014ae] try to commit
+[DEBUG] Txn[1000014ae] successfully commit
+[DEBUG] Txn[1000014b1] start
+[DEBUG] Txn[1000014b1] try to commit
+[DEBUG] Txn[1000014b1] successfully commit
+[DEBUG] Txn[1000014ef] start
+[DEBUG] Txn[1000014ef] try to commit
+[DEBUG] Txn[1000014ef] successfully commit
+[DEBUG] Txn[1000014fa] start
+[DEBUG] Txn[1000014fa] try to commit
+[DEBUG] Txn[1000014fa] successfully commit
+[DEBUG] Txn[10000150f] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[10000153b] abort
+[DEBUG] Txn[10000153d] start
+[DEBUG] Txn[10000153d] try to commit
+[DEBUG] Txn[10000153d] successfully commit
+[DEBUG] Txn[100001561] start
+[DEBUG] Txn[100001561] try to commit
+[DEBUG] Txn[100001561] successfully commit
+[DEBUG] Txn[10000157d] start
+[DEBUG] Txn[10000157d] try to commit
+[DEBUG] Txn[10000157d] successfully commit
+[DEBUG] Txn[1000015ab] start
+[DEBUG] Txn[1000015ab] try to commit
+[DEBUG] Txn[1000015ab] successfully commit
+[DEBUG] Txn[1000015d8] start
+[DEBUG] Txn[1000015d8] try to commit
+[DEBUG] Txn[1000015d8] successfully commit
+[DEBUG] Txn[1000015ef] start
+[DEBUG] Txn[1000015ef] try to commit
+[DEBUG] Txn[1000015ef] successfully commit
+[DEBUG] Txn[100001610] start
+[DEBUG] Txn[100001610] try to commit
+[DEBUG] Txn[100001610] successfully commit
+[DEBUG] Txn[10000162e] start
+[DEBUG] Txn[10000162e] try to commit
+[DEBUG] Txn[10000162e] successfully commit
+[DEBUG] Txn[100001640] start
+[DEBUG] Txn[100001640] try to commit
+[DEBUG] Txn[100001640] successfully commit
+[DEBUG] Txn[100001658] start
+[DEBUG] Txn[100001658] try to commit
+[DEBUG] Txn[100001658] successfully commit
+[DEBUG] Txn[10000166c] start
+[DEBUG] Txn[10000166c] try to commit
+[DEBUG] Txn[10000166c] successfully commit
+[DEBUG] Txn[10000168e] start
+[DEBUG] Txn[10000168e] try to commit
+[DEBUG] Txn[10000168e] successfully commit
+[DEBUG] Txn[1000016a3] start
+[DEBUG] Txn[1000016a3] try to commit
+[DEBUG] Txn[1000016a3] successfully commit
+[DEBUG] Txn[1000016bf] start
+[DEBUG] Txn[1000016bf] try to commit
+[DEBUG] Txn[1000016bf] successfully commit
+[DEBUG] Txn[1000016d3] start
+[DEBUG] Txn[1000016d3] try to commit
+[DEBUG] Txn[1000016d3] successfully commit
+[DEBUG] Txn[1000016e5] start
+[DEBUG] Txn[1000016e5] try to commit
+[DEBUG] Txn[1000016e5] successfully commit
+[DEBUG] Txn[1000016ff] start
+[DEBUG] Txn[1000016ff] try to commit
+[DEBUG] Txn[1000016ff] successfully commit
+[DEBUG] Txn[10000171a] start
+[DEBUG] Txn[10000171a] try to commit
+[DEBUG] Txn[10000171a] successfully commit
+[DEBUG] Txn[10000172e] start
+[DEBUG] Txn[10000172e] try to commit
+[DEBUG] Txn[10000172e] successfully commit
+[DEBUG] Txn[100001745] start
+[DEBUG] Txn[100001745] try to commit
+[DEBUG] Txn[100001745] successfully commit
+[DEBUG] Txn[100001780] start
+[DEBUG] Txn[100001780] try to commit
+[DEBUG] Txn[100001780] successfully commit
+[DEBUG] Txn[100001797] start
+[DEBUG] Txn[100001797] try to commit
+[DEBUG] Txn[100001797] successfully commit
+[DEBUG] Txn[1000017a0] start
+[DEBUG] Txn[1000017a0] try to commit
+[DEBUG] Txn[1000017a0] successfully commit
+[DEBUG] Txn[1000017af] start
+[DEBUG] Txn[1000017af] try to commit
+[DEBUG] Txn[1000017af] successfully commit
+[DEBUG] Txn[1000017d4] start
+[DEBUG] Txn[1000017d4] try to commit
+[DEBUG] Txn[1000017d4] successfully commit
+[DEBUG] Txn[1000017fa] start
+[DEBUG] Txn[1000017fa] try to commit
+[DEBUG] Txn[1000017fa] successfully commit
+[DEBUG] Txn[10000180e] start
+[DEBUG] Txn[10000180e] try to commit
+[DEBUG] Txn[10000180e] successfully commit
+[DEBUG] Txn[100001875] start
+[DEBUG] Txn[100001875] try to commit
+[DEBUG] Txn[100001875] successfully commit
+[DEBUG] Txn[100001898] start
+[DEBUG] Txn[100001898] try to commit
+[DEBUG] Txn[100001898] successfully commit
+[DEBUG] Txn[1000018a6] start
+[DEBUG] Txn[1000018a6] try to commit
+[DEBUG] Txn[1000018a6] successfully commit
+[DEBUG] Txn[1000018c6] start
+[DEBUG] Txn[1000018c6] try to commit
+[DEBUG] Txn[1000018c6] successfully commit
+[DEBUG] Txn[1000018d2] start
+[DEBUG] Txn[1000018d2] try to commit
+[DEBUG] Txn[1000018d2] successfully commit
+[DEBUG] Txn[1000018eb] start
+[DEBUG] Txn[1000018eb] try to commit
+[DEBUG] Txn[1000018eb] successfully commit
+[DEBUG] Txn[100001908] start
+[DEBUG] Txn[100001908] try to commit
+[DEBUG] Txn[100001908] successfully commit
+[DEBUG] Txn[100001924] start
+[DEBUG] Txn[100001924] try to commit
+[DEBUG] Txn[100001924] successfully commit
+[DEBUG] Txn[10000193a] start
+[DEBUG] Txn[10000193a] try to commit
+[DEBUG] Txn[10000193a] successfully commit
+[DEBUG] Txn[10000196c] start
+[DEBUG] Txn[10000196c] try to commit
+[DEBUG] Txn[10000196c] successfully commit
+[DEBUG] Txn[100001980] start
+[DEBUG] Txn[100001980] try to commit
+[DEBUG] Txn[100001980] successfully commit
+[DEBUG] Txn[100001990] start
+[DEBUG] Txn[100001990] try to commit
+[DEBUG] Txn[100001990] successfully commit
+[DEBUG] Txn[1000019b3] start
+[DEBUG] Txn[1000019b3] try to commit
+[DEBUG] Txn[1000019b3] successfully commit
+[DEBUG] Txn[1000019c6] start
+[DEBUG] Txn[1000019c6] try to commit
+[DEBUG] Txn[1000019c6] successfully commit
+[DEBUG] Txn[1000019d0] start
+[DEBUG] Txn[1000019d0] try to commit
+[DEBUG] Txn[1000019d0] successfully commit
+[DEBUG] Txn[1000019da] start
+[DEBUG] Txn[1000019da] try to commit
+[DEBUG] Txn[1000019da] successfully commit
+[DEBUG] Txn[1000019dc] start
+[DEBUG] Txn[1000019dc] try to commit
+[DEBUG] Txn[1000019dc] successfully commit
+[DEBUG] Txn[100001a0d] start
+[DEBUG] Txn[100001a0d] try to commit
+[DEBUG] Txn[100001a0d] successfully commit
+[DEBUG] Txn[100001a27] start
+[DEBUG] Txn[100001a27] try to commit
+[DEBUG] Txn[100001a27] successfully commit
+[DEBUG] Txn[100001a3a] start
+[DEBUG] Txn[100001a3a] try to commit
+[DEBUG] Txn[100001a3a] successfully commit
+[DEBUG] Txn[100001a4f] start
+[DEBUG] Txn[100001a4f] try to commit
+[DEBUG] Txn[100001a4f] successfully commit
+[DEBUG] Txn[100001a78] start
+[DEBUG] Txn[100001a78] try to commit
+[DEBUG] Txn[100001a78] successfully commit
+[DEBUG] Txn[100001a98] start
+[DEBUG] Txn[100001a98] try to commit
+[DEBUG] Txn[100001a98] successfully commit
+[DEBUG] Txn[100001ace] start
+[DEBUG] Txn[100001ace] try to commit
+[DEBUG] Txn[100001ace] successfully commit
+[DEBUG] Txn[100001ae1] start
+[DEBUG] Txn[100001ae1] try to commit
+[DEBUG] Txn[100001ae1] successfully commit
+[DEBUG] Txn[100001afe] start
+[DEBUG] Txn[100001afe] try to commit
+[DEBUG] Txn[100001afe] successfully commit
+[DEBUG] Txn[100001b12] start
+[DEBUG] Txn[100001b12] try to commit
+[DEBUG] Txn[100001b12] successfully commit
+[DEBUG] Txn[100001b22] start
+[DEBUG] Txn[100001b22] try to commit
+[DEBUG] Txn[100001b22] successfully commit
+[DEBUG] Txn[100001b34] start
+[DEBUG] Txn[100001b34] try to commit
+[DEBUG] Txn[100001b34] successfully commit
+[DEBUG] Txn[100001b5d] start
+[DEBUG] Txn[100001b5d] try to commit
+[DEBUG] Txn[100001b5d] successfully commit
+[DEBUG] Txn[100001b68] start
+[DEBUG] Txn[100001b68] try to commit
+[DEBUG] Txn[100001b68] successfully commit
+[DEBUG] Txn[100001b7e] start
+[DEBUG] Txn[100001b7e] try to commit
+[DEBUG] Txn[100001b7e] successfully commit
+[DEBUG] Txn[100001b90] start
+[DEBUG] Txn[100001b90] try to commit
+[DEBUG] Txn[100001b90] successfully commit
+[DEBUG] Txn[100001baa] start
+[DEBUG] Txn[100001baa] try to commit
+[DEBUG] Txn[100001baa] successfully commit
+[DEBUG] Txn[100001bbc] start
+[DEBUG] Txn[100001bbc] try to commit
+[DEBUG] Txn[100001bbc] successfully commit
+[DEBUG] Txn[100001bd1] start
+[DEBUG] Txn[100001bd1] try to commit
+[DEBUG] Txn[100001bd1] successfully commit
+[DEBUG] Txn[100001be1] start
+[DEBUG] Txn[100001be1] try to commit
+[DEBUG] Txn[100001be1] successfully commit
+[DEBUG] Txn[100001bfe] start
+[DEBUG] Txn[100001bfe] try to commit
+[DEBUG] Txn[100001bfe] successfully commit
+[DEBUG] Txn[100001c25] start
+[DEBUG] Txn[100001c25] try to commit
+[DEBUG] Txn[100001c25] successfully commit
+[DEBUG] Txn[100001c39] start
+[DEBUG] Txn[100001c39] try to commit
+[DEBUG] Txn[100001c39] successfully commit
+[DEBUG] Txn[100001c45] start
+[DEBUG] Txn[100001c45] try to commit
+[DEBUG] Txn[100001c45] successfully commit
+[DEBUG] Txn[100001c4d] start
+[DEBUG] Txn[100001c4d] try to commit
+[DEBUG] Txn[100001c4d] successfully commit
+[DEBUG] Txn[100001c58] start
+[DEBUG] Txn[100001c58] try to commit
+[DEBUG] Txn[100001c58] successfully commit
+[DEBUG] Txn[100001c69] start
+[DEBUG] Txn[100001c69] try to commit
+[DEBUG] Txn[100001c69] successfully commit
+[DEBUG] Txn[100001c6f] start
+[DEBUG] Txn[100001c6f] try to commit
+[DEBUG] Txn[100001c6f] successfully commit
+[DEBUG] Txn[100001c81] start
+[DEBUG] Txn[100001c81] try to commit
+[DEBUG] Txn[100001c81] successfully commit
+[DEBUG] Txn[100001c8f] start
+[DEBUG] Txn[100001c8f] try to commit
+[DEBUG] Txn[100001c8f] successfully commit
+[DEBUG] Txn[100001c94] start
+[DEBUG] Txn[100001c94] try to commit
+[DEBUG] Txn[100001c94] successfully commit
+[DEBUG] Txn[100001cad] start
+[DEBUG] Txn[100001cad] try to commit
+[DEBUG] Txn[100001cad] successfully commit
+[DEBUG] Txn[100001cd5] start
+[DEBUG] Txn[100001cd5] try to commit
+[DEBUG] Txn[100001cd5] successfully commit
+[DEBUG] Txn[100001d0d] start
+[DEBUG] Txn[100001d0d] try to commit
+[DEBUG] Txn[100001d0d] successfully commit
+[DEBUG] Txn[100001d0f] start
+[DEBUG] Txn[100001d0f] try to commit
+[DEBUG] Txn[100001d0f] successfully commit
+[DEBUG] Txn[100001d22] start
+[DEBUG] Txn[100001d22] try to commit
+[DEBUG] Txn[100001d22] successfully commit
+[DEBUG] Txn[100001d30] start
+[DEBUG] Txn[100001d30] try to commit
+[DEBUG] Txn[100001d30] successfully commit
+[DEBUG] Txn[100001d85] start
+[DEBUG] Txn[100001d85] try to commit
+[DEBUG] Txn[100001d85] successfully commit
+[DEBUG] Txn[100001d89] start
+[DEBUG] Txn[100001d89] try to commit
+[DEBUG] Txn[100001d89] successfully commit
+[DEBUG] Txn[100001da0] start
+[DEBUG] Txn[100001da0] try to commit
+[DEBUG] Txn[100001da0] successfully commit
+[DEBUG] Txn[100001dda] start
+[DEBUG] Txn[100001dda] try to commit
+[DEBUG] Txn[100001dda] successfully commit
+[DEBUG] Txn[100001e0c] start
+[DEBUG] Txn[100001e0c] try to commit
+[DEBUG] Txn[100001e0c] successfully commit
+[DEBUG] Txn[100001e66] start
+[DEBUG] Txn[100001e66] try to commit
+[DEBUG] Txn[100001e66] successfully commit
+[DEBUG] Txn[100001eb9] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100001ecd] abort
+[DEBUG] Txn[100001ecf] start
+[DEBUG] Txn[100001ecf] try to commit
+[DEBUG] Txn[100001ecf] successfully commit
+[DEBUG] Txn[100001edd] start
+[DEBUG] Txn[100001edd] try to commit
+[DEBUG] Txn[100001edd] successfully commit
+[DEBUG] Txn[100001ee4] start
+[DEBUG] Txn[100001ee4] try to commit
+[DEBUG] Txn[100001ee4] successfully commit
+[DEBUG] Txn[100001ef7] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100001f01] abort
+[DEBUG] Txn[100001f03] start
+[DEBUG] Txn[100001f03] try to commit
+[DEBUG] Txn[100001f03] successfully commit
+[DEBUG] Txn[100001f12] start
+[DEBUG] Txn[100001f12] try to commit
+[DEBUG] Txn[100001f12] successfully commit
+[DEBUG] Txn[100001f39] start
+[DEBUG] Txn[100001f39] try to commit
+[DEBUG] Txn[100001f39] successfully commit
+[DEBUG] Txn[100001f66] start
+[DEBUG] Txn[100001f66] try to commit
+[DEBUG] Txn[100001f66] successfully commit
+[DEBUG] Txn[100001f78] start
+[DEBUG] Txn[100001f78] try to commit
+[DEBUG] Txn[100001f78] successfully commit
+[DEBUG] Txn[100001fb2] start
+[DEBUG] Txn[100001fb2] try to commit
+[DEBUG] Txn[100001fb2] successfully commit
+[DEBUG] Txn[100001fe5] start
+[DEBUG] Txn[100001fe5] try to commit
+[DEBUG] Txn[100001fe5] successfully commit
+[DEBUG] Txn[100002002] start
+[DEBUG] Txn[100002002] try to commit
+[DEBUG] Txn[100002002] successfully commit
+[DEBUG] Txn[100002017] start
+[DEBUG] Txn[100002017] try to commit
+[DEBUG] Txn[100002017] successfully commit
+[DEBUG] Txn[100002023] start
+[DEBUG] Txn[100002023] try to commit
+[DEBUG] Txn[100002023] successfully commit
+[DEBUG] Txn[100002035] start
+[DEBUG] Txn[100002035] try to commit
+[DEBUG] Txn[100002035] successfully commit
+[DEBUG] Txn[10000204a] start
+[DEBUG] Txn[10000204a] try to commit
+[DEBUG] Txn[10000204a] successfully commit
+[DEBUG] Txn[10000206e] start
+[DEBUG] Txn[10000206e] try to commit
+[DEBUG] Txn[10000206e] successfully commit
+[DEBUG] Txn[10000207b] start
+[DEBUG] Txn[10000207b] try to commit
+[DEBUG] Txn[10000207b] successfully commit
+[DEBUG] Txn[100002090] start
+[DEBUG] Txn[100002090] try to commit
+[DEBUG] Txn[100002090] successfully commit
+[DEBUG] Txn[1000020a5] start
+[DEBUG] Txn[1000020a5] try to commit
+[DEBUG] Txn[1000020a5] successfully commit
+[DEBUG] Txn[1000020c8] start
+[DEBUG] Txn[1000020c8] try to commit
+[DEBUG] Txn[1000020c8] successfully commit
+[DEBUG] Txn[1000020e0] start
+[DEBUG] Txn[1000020e0] try to commit
+[DEBUG] Txn[1000020e0] successfully commit
+[DEBUG] Txn[1000020fc] start
+[DEBUG] Txn[1000020fc] try to commit
+[DEBUG] Txn[1000020fc] successfully commit
+[DEBUG] Txn[100002134] start
+[DEBUG] Txn[100002134] try to commit
+[DEBUG] Txn[100002134] successfully commit
+[DEBUG] Txn[100002143] start
+[DEBUG] Txn[100002143] try to commit
+[DEBUG] Txn[100002143] successfully commit
+[DEBUG] Txn[100002187] start
+[DEBUG] Txn[100002187] try to commit
+[DEBUG] Txn[100002187] successfully commit
+[DEBUG] Txn[10000219b] start
+[DEBUG] Txn[10000219b] try to commit
+[DEBUG] Txn[10000219b] successfully commit
+[DEBUG] Txn[10000219c] start
+[DEBUG] Txn[10000219c] try to commit
+[DEBUG] Txn[10000219c] successfully commit
+[DEBUG] Txn[1000021ce] start
+[DEBUG] Txn[1000021ce] try to commit
+[DEBUG] Txn[1000021ce] successfully commit
+[DEBUG] Txn[1000021e3] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[10000220e] abort
+[DEBUG] Txn[100002211] start
+[DEBUG] Txn[100002211] try to commit
+[DEBUG] Txn[100002211] successfully commit
+[DEBUG] Txn[100002230] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100002241] abort
+[DEBUG] Txn[100002242] start
+[DEBUG] Txn[100002242] try to commit
+[DEBUG] Txn[100002242] successfully commit
+[DEBUG] Txn[10000224c] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[10000227a] abort
+[DEBUG] Txn[10000227c] start
+[DEBUG] Txn[10000227c] try to commit
+[DEBUG] Txn[10000227c] successfully commit
+[DEBUG] Txn[100002291] start
+[DEBUG] Txn[100002291] try to commit
+[DEBUG] Txn[100002291] successfully commit
+[DEBUG] Txn[100002298] start
+[DEBUG] Txn[100002298] try to commit
+[DEBUG] Txn[100002298] successfully commit
+[DEBUG] Txn[1000022a6] start
+[DEBUG] Txn[1000022a6] try to commit
+[DEBUG] Txn[1000022a6] successfully commit
+[DEBUG] Txn[1000022b4] start
+[DEBUG] Txn[1000022b4] try to commit
+[DEBUG] Txn[1000022b4] successfully commit
+[DEBUG] Txn[1000022b7] start
+[DEBUG] Txn[1000022b7] try to commit
+[DEBUG] Txn[1000022b7] successfully commit
+[DEBUG] Txn[1000022ce] start
+[DEBUG] Txn[1000022ce] try to commit
+[DEBUG] Txn[1000022ce] successfully commit
+[DEBUG] Txn[1000022e8] start
+[DEBUG] Txn[1000022e8] try to commit
+[DEBUG] Txn[1000022e8] successfully commit
+[DEBUG] Txn[100002306] start
+[DEBUG] Txn[100002306] try to commit
+[DEBUG] Txn[100002306] successfully commit
+[DEBUG] Txn[100002320] start
+[DEBUG] Txn[100002320] try to commit
+[DEBUG] Txn[100002320] successfully commit
+[DEBUG] Txn[100002336] start
+[DEBUG] Txn[100002336] try to commit
+[DEBUG] Txn[100002336] successfully commit
+[DEBUG] Txn[100002355] start
+[DEBUG] Txn[100002355] try to commit
+[DEBUG] Txn[100002355] successfully commit
+[DEBUG] Txn[100002376] start
+[DEBUG] Txn[100002376] try to commit
+[DEBUG] Txn[100002376] successfully commit
+[DEBUG] Txn[10000238d] start
+[DEBUG] Txn[10000238d] try to commit
+[DEBUG] Txn[10000238d] successfully commit
+[DEBUG] Txn[1000023b0] start
+[DEBUG] Txn[1000023b0] try to commit
+[DEBUG] Txn[1000023b0] successfully commit
+[DEBUG] Txn[1000023c9] start
+[DEBUG] Txn[1000023c9] try to commit
+[DEBUG] Txn[1000023c9] successfully commit
+[DEBUG] Txn[1000023db] start
+[DEBUG] Txn[1000023db] try to commit
+[DEBUG] Txn[1000023db] successfully commit
+[DEBUG] Txn[1000023ee] start
+[DEBUG] Txn[1000023ee] try to commit
+[DEBUG] Txn[1000023ee] successfully commit
+[DEBUG] Txn[10000240b] start
+[DEBUG] Txn[10000240b] try to commit
+[DEBUG] Txn[10000240b] successfully commit
+[DEBUG] Txn[10000241e] start
+[DEBUG] Txn[10000241e] try to commit
+[DEBUG] Txn[10000241e] successfully commit
+[DEBUG] Txn[100002439] start
+[DEBUG] Txn[100002439] try to commit
+[DEBUG] Txn[100002439] successfully commit
+[DEBUG] Txn[100002464] start
+[DEBUG] Txn[100002464] try to commit
+[DEBUG] Txn[100002464] successfully commit
+[DEBUG] Txn[100002475] start
+[DEBUG] Txn[100002475] try to commit
+[DEBUG] Txn[100002475] successfully commit
+[DEBUG] Txn[10000248f] start
+[DEBUG] Txn[10000248f] try to commit
+[DEBUG] Txn[10000248f] successfully commit
+[DEBUG] Txn[10000249e] start
+[DEBUG] Txn[10000249e] try to commit
+[DEBUG] Txn[10000249e] successfully commit
+[DEBUG] Txn[1000024b9] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[1000024c0] abort
+[DEBUG] Txn[1000024c2] start
+[DEBUG] Txn[1000024c2] try to commit
+[DEBUG] Txn[1000024c2] successfully commit
+[DEBUG] Txn[1000024e5] start
+[DEBUG] Txn[1000024e5] try to commit
+[DEBUG] Txn[1000024e5] successfully commit
+[DEBUG] Txn[100002501] start
+[DEBUG] Txn[100002501] try to commit
+[DEBUG] Txn[100002501] successfully commit
+[DEBUG] Txn[100002514] start
+[DEBUG] Txn[100002514] try to commit
+[DEBUG] Txn[100002514] successfully commit
+[DEBUG] Txn[10000253e] start
+[DEBUG] Txn[10000253e] try to commit
+[DEBUG] Txn[10000253e] successfully commit
+[DEBUG] Txn[100002553] start
+[DEBUG] Txn[100002553] try to commit
+[DEBUG] Txn[100002553] successfully commit
+[DEBUG] Txn[10000256f] start
+[DEBUG] Txn[10000256f] try to commit
+[DEBUG] Txn[10000256f] successfully commit
+[DEBUG] Txn[10000258c] start
+[DEBUG] Txn[10000258c] try to commit
+[DEBUG] Txn[10000258c] successfully commit
+[DEBUG] Txn[10000259e] start
+[DEBUG] Txn[10000259e] try to commit
+[DEBUG] Txn[10000259e] successfully commit
+[DEBUG] Txn[1000025bc] start
+[DEBUG] Txn[1000025bc] try to commit
+[DEBUG] Txn[1000025bc] successfully commit
+[DEBUG] Txn[1000025d6] start
+[DEBUG] Txn[1000025d6] try to commit
+[DEBUG] Txn[1000025d6] successfully commit
+[DEBUG] Txn[1000025e8] start
+[DEBUG] Txn[1000025e8] try to commit
+[DEBUG] Txn[1000025e8] successfully commit
+[DEBUG] Txn[1000025f9] start
+[DEBUG] Txn[1000025f9] try to commit
+[DEBUG] Txn[1000025f9] successfully commit
+[DEBUG] Txn[10000260b] start
+[DEBUG] Txn[10000260b] try to commit
+[DEBUG] Txn[10000260b] successfully commit
+[DEBUG] Txn[100002622] start
+[DEBUG] Txn[100002622] try to commit
+[DEBUG] Txn[100002622] successfully commit
+[DEBUG] Txn[100002641] start
+[DEBUG] Txn[100002641] try to commit
+[DEBUG] Txn[100002641] successfully commit
+[DEBUG] Txn[10000266a] start
+[DEBUG] Txn[10000266a] try to commit
+[DEBUG] Txn[10000266a] successfully commit
+[DEBUG] Txn[10000267e] start
+[DEBUG] Txn[10000267e] try to commit
+[DEBUG] Txn[10000267e] successfully commit
+[DEBUG] Txn[1000026a4] start
+[DEBUG] Txn[1000026a4] try to commit
+[DEBUG] Txn[1000026a4] successfully commit
+[DEBUG] Txn[1000026b5] start
+[DEBUG] Txn[1000026b5] try to commit
+[DEBUG] Txn[1000026b5] successfully commit
+[DEBUG] Txn[1000026c0] start
+[DEBUG] Txn[1000026c0] try to commit
+[DEBUG] Txn[1000026c0] successfully commit
+[DEBUG] Txn[1000026dc] start
+[DEBUG] Txn[1000026dc] try to commit
+[DEBUG] Txn[1000026dc] successfully commit
+[DEBUG] Txn[1000026ef] start
+[DEBUG] Txn[1000026ef] try to commit
+[DEBUG] Txn[1000026ef] successfully commit
+[DEBUG] Txn[100002713] start
+[DEBUG] Txn[100002713] try to commit
+[DEBUG] Txn[100002713] successfully commit
+[DEBUG] Txn[100002729] start
+[DEBUG] Txn[100002729] try to commit
+[DEBUG] Txn[100002729] successfully commit
+[DEBUG] Txn[10000273b] start
+[DEBUG] Txn[10000273b] try to commit
+[DEBUG] Txn[10000273b] successfully commit
+[DEBUG] Txn[100002753] start
+[DEBUG] Txn[100002753] try to commit
+[DEBUG] Txn[100002753] successfully commit
+[DEBUG] Txn[10000276c] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[10000277d] abort
+[DEBUG] Txn[10000277f] start
+[DEBUG] Txn[10000277f] try to commit
+[DEBUG] Txn[10000277f] successfully commit
+[DEBUG] Txn[100002790] start
+[DEBUG] Txn[100002790] try to commit
+[DEBUG] Txn[100002790] successfully commit
+[DEBUG] Txn[1000027bc] start
+[DEBUG] Txn[1000027bc] try to commit
+[DEBUG] Txn[1000027bc] successfully commit
+[DEBUG] Txn[1000027cb] start
+[DEBUG] Txn[1000027cb] try to commit
+[DEBUG] Txn[1000027cb] successfully commit
+[DEBUG] Txn[1000027e8] start
+[DEBUG] Txn[1000027e8] try to commit
+[DEBUG] Txn[1000027e8] successfully commit
+[DEBUG] Txn[100002801] start
+[DEBUG] Txn[100002801] try to commit
+[DEBUG] Txn[100002801] successfully commit
+[DEBUG] Txn[100002813] start
+[DEBUG] Txn[100002813] try to commit
+[DEBUG] Txn[100002813] successfully commit
+[DEBUG] Txn[100002823] start
+[DEBUG] Txn[100002823] try to commit
+[DEBUG] Txn[100002823] successfully commit
+[DEBUG] Txn[10000283d] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100002864] abort
+[DEBUG] Txn[100002865] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[10000287a] abort
+[DEBUG] Txn[10000287b] start
+[DEBUG] Txn[10000287b] try to commit
+[DEBUG] Txn[10000287b] successfully commit
+[DEBUG] Txn[100002892] start
+[DEBUG] Txn[100002892] try to commit
+[DEBUG] Txn[100002892] successfully commit
+[DEBUG] Txn[1000028a6] start
+[DEBUG] Txn[1000028a6] try to commit
+[DEBUG] Txn[1000028a6] successfully commit
+[DEBUG] Txn[1000028ab] start
+[DEBUG] Txn[1000028ab] try to commit
+[DEBUG] Txn[1000028ab] successfully commit
+[DEBUG] Txn[1000028b6] start
+[DEBUG] Txn[1000028b6] try to commit
+[DEBUG] Txn[1000028b6] successfully commit
+[DEBUG] Txn[1000028c0] start
+[DEBUG] Txn[1000028c0] try to commit
+[DEBUG] Txn[1000028c0] successfully commit
+[DEBUG] Txn[1000028c1] start
+[DEBUG] Txn[1000028c1] try to commit
+[DEBUG] Txn[1000028c1] successfully commit
+[DEBUG] Txn[1000028cc] start
+[DEBUG] Txn[1000028cc] try to commit
+[DEBUG] Txn[1000028cc] successfully commit
+[DEBUG] Txn[1000028df] start
+[DEBUG] Txn[1000028df] try to commit
+[DEBUG] Txn[1000028df] successfully commit
+[DEBUG] Txn[1000028ec] start
+[DEBUG] Txn[1000028ec] try to commit
+[DEBUG] Txn[1000028ec] successfully commit
+[DEBUG] Txn[1000028f7] start
+[DEBUG] Txn[1000028f7] try to commit
+[DEBUG] Txn[1000028f7] successfully commit
+[DEBUG] Txn[1000028fd] start
+[DEBUG] [ERROR] [KvException|TxnException] Tid[15] msg[TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy]
+[DEBUG] TxnException: TxnAbortException:org.rocksdb.RocksDBException: Busy
+[DEBUG] Txn[100002929] abort
+[DEBUG] Txn[10000292a] start
+[DEBUG] Txn[10000292a] try to commit
+[DEBUG] Txn[10000292a] successfully commit
+[DEBUG] Txn[10000296f] start
+[DEBUG] Txn[10000296f] try to commit
+[DEBUG] Txn[10000296f] successfully commit
+[DEBUG] Txn[100002981] start
+[DEBUG] Txn[100002981] try to commit
+[DEBUG] Txn[100002981] successfully commit
+[DEBUG] Txn[1000029c5] start
+[DEBUG] Txn[1000029c5] try to commit
+[DEBUG] Txn[1000029c5] successfully commit
+[DEBUG] Txn[1000029d3] start
+[DEBUG] Txn[1000029d3] try to commit
+[DEBUG] Txn[1000029d3] successfully commit
+[DEBUG] Txn[1000029e5] start
+[DEBUG] Txn[1000029e5] try to commit
+[DEBUG] Txn[1000029e5] successfully commit
+[DEBUG] Txn[1000029f4] start
+[DEBUG] Txn[1000029f4] try to commit
+[DEBUG] Txn[1000029f4] successfully commit
+[DEBUG] Txn[1000029fa] start
+[DEBUG] Txn[1000029fa] try to commit
+[DEBUG] Txn[1000029fa] successfully commit
+[DEBUG] Txn[100002a0a] start
+[DEBUG] Txn[100002a0a] try to commit
+[DEBUG] Txn[100002a0a] successfully commit
+[DEBUG] Txn[100002a87] start
+[DEBUG] Txn[100002a87] try to commit
+[DEBUG] Txn[100002a87] successfully commit
+[DEBUG] Txn[100002a91] start
+[DEBUG] Txn[100002a91] try to commit
+[DEBUG] Txn[100002a91] successfully commit
+[DEBUG] Txn[100002a9a] start
+[DEBUG] Txn[100002a9a] try to commit
+[DEBUG] Txn[100002a9a] successfully commit
+[DEBUG] Txn[100002aa9] start
+[DEBUG] Txn[100002aa9] try to commit
+[DEBUG] Txn[100002aa9] successfully commit
+[DEBUG] Txn[100002abd] start
+[DEBUG] Txn[100002abd] try to commit
+[DEBUG] Txn[100002abd] successfully commit
+[DEBUG] Txn[100002ac7] start
+[DEBUG] Txn[100002ac7] try to commit
+[DEBUG] Txn[100002ac7] successfully commit
+[DEBUG] Txn[100002ae2] start
+[DEBUG] Txn[100002ae2] try to commit
+[DEBUG] Txn[100002ae2] successfully commit
+[DEBUG] Txn[100002ae7] start
+[DEBUG] Txn[100002ae7] try to commit
+[DEBUG] Txn[100002ae7] successfully commit
+[DEBUG] Txn[100002afa] start
+[DEBUG] Txn[100002afa] try to commit
+[DEBUG] Txn[100002afa] successfully commit
+[DEBUG] Txn[100002b07] start
+[DEBUG] Txn[100002b07] try to commit
+[DEBUG] Txn[100002b07] successfully commit
+[DEBUG] Txn[100002b0e] start
+[DEBUG] Txn[100002b0e] try to commit
+[DEBUG] Txn[100002b0e] successfully commit
+[DEBUG] Txn[100002b17] start
+[DEBUG] Txn[100002b17] try to commit
+[DEBUG] Txn[100002b17] successfully commit
+[DEBUG] Txn[100002b23] start
+[DEBUG] Txn[100002b23] try to commit
+[DEBUG] Txn[100002b23] successfully commit
+[DEBUG] Txn[100002b2b] start
+[DEBUG] Txn[100002b2b] try to commit
+[DEBUG] Txn[100002b2b] successfully commit
+[DEBUG] Txn[100002b38] start
+[DEBUG] Txn[100002b38] try to commit
+[DEBUG] Txn[100002b38] successfully commit
+[DEBUG] Txn[100002b3d] start
+[DEBUG] Txn[100002b3d] try to commit
+[DEBUG] Txn[100002b3d] successfully commit
+[DEBUG] Txn[100002b3e] start
+[DEBUG] Txn[100002b3e] try to commit
+[DEBUG] Txn[100002b3e] successfully commit
+[DEBUG] Txn[100002b3f] start
+[DEBUG] Txn[100002b3f] try to commit
+[DEBUG] Txn[100002b3f] successfully commit
+[DEBUG] Txn[100002b57] start
+[DEBUG] Txn[100002b57] try to commit
+[DEBUG] Txn[100002b57] successfully commit
+[DEBUG] Txn[100002b7b] start
+[DEBUG] Txn[100002b7b] try to commit
+[DEBUG] Txn[100002b7b] successfully commit
+[DEBUG] Txn[100002b8b] start
+[DEBUG] Txn[100002b8b] try to commit
+[DEBUG] Txn[100002b8b] successfully commit

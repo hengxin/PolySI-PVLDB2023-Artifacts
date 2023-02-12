@@ -1,0 +1,19 @@
+version:            "3.7"
+services:
+  galera0:
+    image:          severalnines/mariadb
+    hostname:       galera0
+    container_name: galera0
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - XTRABACKUP_PASSWORD=secret
+      - CLUSTER_NAME=galera_cluster
+  galera:
+    image:          severalnines/mariadb
+    environment:
+      - CLUSTER_JOIN=galera0
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - XTRABACKUP_PASSWORD=secret
+      - CLUSTER_NAME=galera_cluster
+    depends_on:
+      - galera0

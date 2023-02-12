@@ -1,0 +1,39 @@
+From 8ffe9c8b7f89ba0cc630ebaa0c64c5543d8a5a37 Mon Sep 17 00:00:00 2001
+From: nobody <nobody@example.com>
+Date: Mon, 29 Aug 2022 19:51:23 +0800
+Subject: [PATCH 5/5] Fix build without COBRA_HOME
+
+---
+ run.sh | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/run.sh b/run.sh
+index 6b4c338..9ac2758 100755
+--- a/run.sh
++++ b/run.sh
+@@ -1,9 +1,9 @@
+ #! /bin/bash
+ 
+-if [ "$COBRA_HOME" == "" ]; then
+-  echo "COBRA_HOME hasn't been set"
+-  exit 1
+-fi
++# if [ "$COBRA_HOME" == "" ]; then
++  # echo "COBRA_HOME hasn't been set"
++  # exit 1
++# fi
+ 
+ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+ 
+@@ -11,7 +11,7 @@ EA="-ea"
+ #MONO="-Djava.library.path=$SCRIPT_DIR/monosat/libmonosat.so -cp $SCRIPT_DIR/monosat/monosat.jar"
+ #MONO="-cp $SCRIPT_DIR/monosat/"
+ 
+-source $COBRA_HOME/env.sh
++# source $COBRA_HOME/env.sh
+ 
+ 
+ function usage {
+-- 
+2.37.2
+

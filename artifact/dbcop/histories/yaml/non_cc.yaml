@@ -1,0 +1,26 @@
+- - events:
+    - write:    true
+      variable: 0
+      value:    1
+      success:  true
+    success:    true
+- - events:
+    - write:    false
+      variable: 0
+      value:    1
+      success:  true
+    - write:    true
+      variable: 1
+      value:    1
+      success:  true
+    success:    true
+- - events:
+    - write:    false
+      variable: 0
+      value:    0
+      success:  true
+    - write:    false
+      variable: 1
+      value:    1
+      success:  true
+    success:    true
