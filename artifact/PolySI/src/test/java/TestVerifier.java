@@ -300,4 +300,26 @@ public class TestVerifier {
 
         assertFalse(new SIVerifier<>(loader).audit());
     }
+
+    @Test
+    void testBP_D() {
+        var loader = new TestLoader(
+            Set.of(0, 1),
+            Map.of(
+                0, List.of(0),
+                1, List.of(1)
+            ),
+            Map.of(
+                0, List.of(
+                    Triple.of(WRITE, "x", 0)
+                ),
+                1, List.of(
+                    Triple.of(WRITE, "x", 1),
+                    Triple.of(READ, "x", 0)
+                )
+            )
+        );
+
+        assertFalse(new SIVerifier<>(loader).audit());
+    }
 }

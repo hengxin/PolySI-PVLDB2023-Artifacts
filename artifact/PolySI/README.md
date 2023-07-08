@@ -118,3 +118,6 @@ edges if txn1 -ww-> txn2> ...], [<new edges if txn2 -ww-> txn1> ...]`.
 
 The operations in related transactions are printed as `<READ/WRITE> <key> =
 <value>`.
+
+Note: previous versions of PolySI had a bug that causes it to miss centain
+violations. This has been fixed in the latest commit.

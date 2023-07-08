@@ -61,6 +61,7 @@ class Utils {
                 return false;
             }
 
+            var myWriteIndices = txnWrites.getOrDefault(Pair.of(ev.getTransaction(), ev.getKey()), new ArrayList<>());
             var writeIndices = txnWrites.get(Pair.of(writeEv.getLeft().getTransaction(), writeEv.getLeft().getKey()));
             var j = Collections.binarySearch(writeIndices, writeEv.getRight());
 
@@ -72,7 +73,7 @@ class Utils {
                     System.err.printf("%s reads from a write after it: %s\n", ev, writeEv.getLeft());
                     return false;
                 }
-            } else if (j != writeIndices.size() - 1) {
+            } else if (j != writeIndices.size() - 1 || (!myWriteIndices.isEmpty() && myWriteIndices.get(0) < i)) {
                 System.err.printf("%s not reading from latest write: %s\n", ev, writeEv.getLeft());
                 return false;
             }
@@ -103,7 +104,8 @@ class Utils {
                     predEdges.forEach(e -> edges.add(Triple.of(p, n, e)));
                 }
 
-                var txns = graphB.successors(n).stream().filter(t -> p == t || !reachability.hasEdgeConnecting(p, t))
+                var txns = graphB.successors(n).stream()
+                        .filter(t -> p == t || !reachability.hasEdgeConnecting(p, t))
                         .collect(Collectors.toList());
 
                 for (var s : txns) {
@@ -230,30 +232,20 @@ class Utils {
                 }
             }
 
-            builder.append(String.format("\"%s\" -> \"%s\" [label=\"%s\"];\n", pair.source(), pair.target(), label));
+            builder.append(
+                    String.format("\"%s\" -> \"%s\" [label=\"%s\"];\n", pair.source(), pair.target(), label));
         }
 
         int colorStep = 0x1000000 / (constraints.size() + 1);
         int color = 0;
         for (var c : constraints) {
             color += colorStep;
-
-            var getLabel = ((Function<SIEdge<KeyType, ValueType>, String>) e -> {
-                if (e.getType() == EdgeType.SO) {
-                    return "SO";
-                } else {
-                    return String.format("%s %s", e.getType(), e.getKey());
-                }
-            });
-
             for (var e : c.getEdges1()) {
-                builder.append(String.format("\"%s\" -> \"%s\" [style=dotted,color=\"#%06x\",label=\"%s\"];\n",
-                        e.getFrom(), e.getTo(), color, getLabel.apply(e)));
+                builder.append(String.format("\"%s\" -> \"%s\" [style=dotted,color=\"#%06x\"];\n", e.getFrom(), e.getTo(), color));
             }
 
             for (var e : c.getEdges2()) {
-                builder.append(String.format("\"%s\" -> \"%s\" [style=dashed,color=\"#%06x\",label=\"%s\"];\n",
-                        e.getFrom(), e.getTo(), color, getLabel.apply(e)));
+                builder.append(String.format("\"%s\" -> \"%s\" [style=dashed,color=\"#%06x\"];\n", e.getFrom(), e.getTo(), color));
             }
         }
 
