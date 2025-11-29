@@ -4,3 +4,4 @@ The artifact can be found in the sub-repository ```artifact```.
 
 The ```polysi-tr.pdf``` file is the accompanying technical report.
 
+[PolySI's workload generator](https://github.com/amnore/dbcop).
